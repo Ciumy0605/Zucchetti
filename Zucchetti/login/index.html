@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="Login.css">
+    <title>CySpace | Login Page</title>
+</head>
+
+<body>
+    <div class="scatola" id="scatola">
+        <div class="form-scatola acc">
+            <form id="loginForm" method="post" action="redirection_page.php" >
+                <h1 id="titolo">Accedi</h1>
+                <input type="text" placeholder="Username" name="Username" required>
+                <input type="password" placeholder="Password" name="Password" required>
+                
+                <!-- CAPTCHA -->
+                <div class="captcha">
+                    <span id="captchaText" class="captcha-text"></span>
+                    <input id="captchaInput" type="text" placeholder="Inserisci il codice" required>
+                </div>
+                
+                <button type="submit">Accedi</button>
+            </form>
+        </div>
+        <div class="anima-scatola">
+            <div class="contenuto">
+                <div class="cont2 ret-dx">
+                    <img id="logo" src="https://raw.githubusercontent.com/Ciumy0605/Zucchetti/refs/heads/main/login_js/Logo_bianco.png" alt="">
+                    <h1>Benvenuto!</h1>
+                    <p>Gestisci le tue prenotazioni in modo semplice e veloce!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="login_js.js"></script>
+</body>
+
+</html>
