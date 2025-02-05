@@ -1,0 +1,157 @@
+
+.main-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; /* Utilizza min-height invece di height */
+    padding: 20px;
+}
+
+.card {
+    background: #F5F7FA;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    transition: all 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+.valid {
+    color: green;
+}
+.error {
+    margin-top: -2px;
+    color: red;
+    font-size: 12px;
+}
+
+.button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background 0.3s;
+    display: block;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: gray;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.requirement {
+    color: red;
+    font-size: 12px;
+}
+
+.requirement.hidden {
+    display: none;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-password {
+    bottom: 15px;
+    position: absolute;
+    right: 85px;
+    cursor: pointer;
+}
+
+.input {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Media Queries per schermi piccoli */
+@media (max-width: 768px) {
+
+
+    .main-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+        padding: 15px;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .input {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .toggle-password {
+        top: 12px;
+        right: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        padding: 10px;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .input {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+
+    .button {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .toggle-password {
+        right: 14px;
+        top: 9px;
+    }
+}
